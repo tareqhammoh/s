@@ -1,0 +1,116 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+
+}
+
+.slider-container{
+
+	margin: 10px auto;
+	width: 300px;
+	height: 400px;
+overflow: hidden;
+	position: relative;
+
+}
+.slider-container img{
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+	z-index: 1;
+
+
+
+	
+
+}
+
+.slider-container img.active{
+
+opacity: 1;
+
+
+}
+
+.slide-number{
+
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 2;
+	background-color:  red;
+	opacity :.6;
+
+}
+
+.slider-controls{
+
+	width: 400px;
+	margin: auto;
+
+}
+.slider-controls .prev,
+.slider-controls .next{
+
+color: red;
+text-align: center;
+cursor: pointer;
+width: 20%;
+background-color: blue;
+border-radius: 20px; 
+user-select: none;
+padding: 10px;
+
+
+	}
+
+.slider-controls .prev{
+
+		float: left;
+	}
+
+.slider-controls .next{
+
+		float: right;
+	}
+
+
+	.slider-controls .prev.disabled,
+.slider-controls .next.disabled{
+background-color: black;
+cursor: no-drop;
+
+}
+
+.indicator{
+
+	width: 60%;
+	float: left;
+
+}
+.indicator ul{
+
+	list-style: none;
+	margin: 0px;
+	text-align: center;
+
+}
+.indicator ul li{
+
+	display: inline-block;
+	background-color: green;
+	color: red;
+	height: 30px;
+	width: 30px;
+	margin: 0 2px;
+	cursor: pointer;
+
+
+}
+.indicator ul li.active{
+
+background-color: blue;
+color: #fff;
+
+}
